@@ -1,0 +1,44 @@
+body{
+    background:url("images/background.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Kalam', cursive;
+    
+}
+#heading{
+    position: fixed;
+    top:2%;
+    left:5%;
+    font-size: 400%;
+    color: #99ff33;
+    text-shadow: 3px 2px 1px #000;
+}
+#desc{
+    position: fixed;
+    top:15%;
+    left:5%;
+    font-size: 230%;
+    color: #ffffff;
+}
+#survey{
+    position: fixed;
+    top:40%;
+    left:5%;
+    text-decoration: none;
+    background: #99ff33;
+    color:#000;
+    font-size: 180%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.footer {
+  position: absolute;
+  bottom: 0%;
+  left: 5%;
+  background-color: #efefef;
+  
+}

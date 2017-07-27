@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friends</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="home.css">
+    
+</head>
+<body>
+    <font id="heading" >Find Friends</font>
+    <p id="desc">Answer a few basic questions.<br>
+        Then find the friend with the greatest compatibility!</p>
+    <a href="/survey"  id="survey" >Take Survey</a>
+
+    <div class="footer">
+        <a href="/api/users" >API Friends List</a>&nbsp;|
+        <a href="" >GitHub Repo</a>
+    </div>
+
+    <script type="text/javascript">
+    $.get("/api/users",function(data){
+        for(var i=0;i<data.length; i++)
+        {
+            console.log(data[i]);
+        }
+    })
+    </script>
+</body>
+</html>
