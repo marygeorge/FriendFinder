@@ -1,0 +1,39 @@
+body{
+    background:url("images/back.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Kalam', cursive;
+    
+}
+#heading{
+    position: fixed;
+    top:0%;
+    left:5%;
+    font-size: 200%;
+    color: #99ff33;
+    text-shadow: 3px 2px 1px #000;
+}
+#surveyTable{
+    position: fixed;
+    top:15%;
+    left:5%;
+}
+#friend{
+    align-content: center;
+    position: fixed;
+    top:5%;
+    left: 63%;
+    border-style: ridge;
+    border-width: 10px;
+    border-color: #99ff33;
+}
+
+.footer {
+  position: absolute;
+  top: 120%;
+  left: 5%;
+  background-color: #efefef;
+  font-size: 80%;
+}

@@ -5,28 +5,24 @@
     <meta name="viewport" content="width=Survey page, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
+    <link type="text/css" rel="stylesheet" href="survey.css">
+    
 </head>
 <style type="text/css">
-#friend{
-    position: fixed;
-    top:5%;
-    left: 63%;
-    border-style: ridge;
-    border-width: 2;
-}
+
 </style>
 <body>
-    	<div class="surveyPage">
+<h2 id="heading">Survey </h2>
 
-		<h2>Survey </h2>
-		<h4>Name</h4>
-		<input type="text" id="name" placeholder="Enter your name"  required >
-
-		<h4>Link to Photo Image (Required)</h4>
-		<input type="text" id="photo" placeholder="Link to your photo" required >
-
-        <h4>Questions:</h4>
-<table>
+<div id="surveyTable">
+    <table >
+    <tr><td>Name</td>
+	<td><input type="text" id="name" placeholder="Enter your name"  required ></td>
+    </tr>
+    <tr><td>Link to Photo Image (Required)</td>
+	<td><input type="text" id="photo" placeholder="Link to your photo" required ></td>
+    </tr>
+    <tr><td>Questions:</td></tr>
     <tr>
         <td>1.<font id="question1"></font></td>
         <td>
@@ -159,20 +155,21 @@
     </tr>
     </table>                                                       
 		<br>
-		<br>
-
-		
 		<button type="submit" id="submit"> Submit</button>
-
+<div>
 <!--Pop up  window-->
-    <div id="friend" hidden="hidden">
+    <div id="friend"> 
+        <!--hidden="hidden">-->
         <div><h2>Best Friend</h2></div>
         <div> <font id="friendName"></font><br>
                 <img id="friendImage" height="25%" width="25%"/>
         </div>
         <div><input type="button" id="close" text="close" value="close" /></div> 
 	</div>
-
+<div class="footer">
+        <a target="_blank" href="/api/users" >API Friends List</a>&nbsp;|
+        <a target="_blank" href="https://github.com/marygeorge/FriendFinder" >GitHub Repo</a>
+    </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 <script type="text/javascript">
